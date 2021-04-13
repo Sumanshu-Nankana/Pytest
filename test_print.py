@@ -30,3 +30,9 @@ def test_product_strings():
     assert math_func.product('Hello ') == 'Hello Hello '
     assert type(math_func.product('Hello ')) is str is str
     assert 'Hello ' in math_func.product('Hello ')
+
+# we can also use the "-q" option i.e. quiet mode option
+# pytest test_print.py -q
+# This will NOT print the other details like - what all test cases executed
+# what is the root directory
+# It only display how many passed and how many skipped
